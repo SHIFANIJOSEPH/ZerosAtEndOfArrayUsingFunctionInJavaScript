@@ -1,0 +1,21 @@
+let arr=[1,0,2,0,3,4,0,5]
+let zerocount=0
+function moveToy(arr,zerocount){
+    let result=[]
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]!=0){
+            result.push(arr[i])
+        }
+        else{
+            zerocount++;
+        }
+    }
+    for(let i=0;i<zerocount;i++){
+        result.push(0)
+    }
+    return {modifiedArray:result,zerocount};
+}
+
+let result = moveToy(arr, zerocount);
+console.log(result.modifiedArray)
+console.log(result.zerocount)
