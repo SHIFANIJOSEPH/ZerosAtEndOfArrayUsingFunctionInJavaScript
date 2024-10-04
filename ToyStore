@@ -1,3 +1,5 @@
+let userInput=prompt("enter the input with commas")
+let arr=userInput.split(',').map(Number)
 let arr=[1,0,2,0,3,4,0,5]
 let zerocount=0
 function moveToy(arr,zerocount){
